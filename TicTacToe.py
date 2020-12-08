@@ -1,10 +1,12 @@
 from math import inf
 import time
+import random
 
 '''
 Created By Prakhar Agarwal
 :)
 '''
+
 
 HUMAN = -1
 COMP = +1
@@ -120,11 +122,10 @@ def ai_turn(c_choice, h_choice):
     if depth == 0 or game_over(board):
         return
     print(f'Computer turn [{c_choice}]')
-    
 
     if depth == 9:
-        x=0
-        y=0
+        x=random.choice([0,1,2])
+        y=random.choice([0,1,2])
     else:
         move = minimax(board, depth, COMP)
         x, y = move[0], move[1]
