@@ -1,6 +1,11 @@
 from math import inf
 import time
 
+'''
+Created By Prakhar Agarwal
+:)
+'''
+
 HUMAN = -1
 COMP = +1
 board = [
